@@ -12,7 +12,7 @@
 ##### react class version application
 ##### Run : npx lite-server / npm run start
 
-### 4-functional-component
+#### 4-functional-component
 ##### react hooks version application
 ##### Run : npm run start
 
