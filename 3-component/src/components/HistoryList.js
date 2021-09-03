@@ -7,7 +7,7 @@ export default class HistoryList extends React.Component {
     super();
 
     this.state = {
-      HistoryList: [],
+        historyList: [],
     };
   }
 
@@ -30,21 +30,12 @@ export default class HistoryList extends React.Component {
     const { historyList } = this.state;
 
     return (
-      <></>
-      //       <List
-      //         data={historyList}
-      //         onClick={onClick}
-      //         renderItem={(item) => (
-      //           <>
-      //             <span>{item.keyword}</span>
-      //             <span className="date">{formatRelativeDate(item.date)}</span>
-      //             <button
-      //               className="btn-remove"
-      //               onClick={(event) => this.handleClickRemove(event, item.keyword)}
-      //             />
-      //           </>
-      //         )}
-      //       />
+        <List 
+            hasDate 
+            data={historyList} 
+            onClick={onClick} 
+            onRemove={(keyword) => this.handleClickRemove(keyword)} />
+        
     );
   }
 }
